@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use('/auth', authRoutes);
 app.use('/questions', questionRoutes);
-app.use('/answers', answerRoutes);
+app.use('/questions', answerRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
